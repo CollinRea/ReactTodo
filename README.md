@@ -1,19 +1,5 @@
-# Boilerplate React App
+# Todo App with React & Redux
 
-## Suggested Steps
+(See App Here)[http://secure-shelf-15256.herokuapp.com/]
 
-* Install dependencies
-
-       npm install
-       
----
-To bundle with webpack
-
-      webpack -w
-
-To start server:
-
-      node server.js
-      
-Server will be up on port 3000
-
+This app is storing data in LocalStorage, will be linked with an external Database shortly. I'd also like to add user login support.
