@@ -17,7 +17,7 @@ export var Todo = React.createClass({
         timestamp = completedAt;
       }
 
-      return message + moment.unix(timestamp).format('MMM Do YYY @ h:mm a');
+      return message + moment.unix(timestamp).format('MMM Do YYYY @ h:mm a');
     };
     return (
       <div className={todoClassName} onClick={() => {
