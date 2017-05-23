@@ -61,8 +61,6 @@ export var startAddTodos = () => {
   };
 };
 
-// Object.keys(todos)
-
 export var toggleShowCompleted = () => {
   return {
     type: 'TOGGLE_SHOW_COMPLETED'
@@ -90,6 +88,13 @@ export var startToggleTodo = (id, completed) => {
   };
 };
 
+export var login = (uid) => {
+  return {
+    type: 'LOGIN',
+    uid
+  };
+};
+
 export var startLogin = () => {
   return (dispatch, getState) => {
     return firebase.auth().signInWithPopup(githubProvider).then((result) => {
@@ -97,6 +102,12 @@ export var startLogin = () => {
     }, (e) => {
       console.log('Unable to auth', e);
     });
+  };
+};
+
+export var logout = () => {
+  return {
+    type: 'LOGOUT'
   };
 };
 
