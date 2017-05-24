@@ -2,4 +2,7 @@
 
 [See App Here](http://secure-shelf-15256.herokuapp.com/)
 
-This app is storing data in LocalStorage, will be linked with an external Database shortly. I'd also like to add user login support.
+App uses GitHub login and Firebase to store user/todo data.
+Deployed on Heroku.
+
+TODO: Ability to Delete todos, Multiple Lists, Email Reminders, Time to Complete
